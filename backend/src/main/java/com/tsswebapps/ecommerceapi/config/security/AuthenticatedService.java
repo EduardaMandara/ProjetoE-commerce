@@ -24,7 +24,6 @@ public class AuthenticatedService implements UserDetailsService {
 		if (usuario.isPresent()) {
 			return usuario.get();
 		}
-		throw new UsernameNotFoundException("Usuario ou senha inválidos.");
+		throw new UsernameNotFoundException("Dados de login incorretos.");
 	}
-
 }

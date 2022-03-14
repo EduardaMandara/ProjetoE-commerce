@@ -15,14 +15,9 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import com.tsswebapps.ecommerceapi.domain.repository.UsuarioRepository;
-
 public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 	@Autowired
-	private AuthenticatedService authenticatedService;	
-	
-	//@Autowired
-	//private UsuarioRepository userRepository;
+	private AuthenticatedService authenticatedService;
 	
 	@Override
 	@Bean
@@ -46,10 +41,10 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 			.antMatchers(HttpMethod.POST, "/auth").permitAll()
 			.anyRequest().authenticated()
 			.and()
+			.httpBasic()
+			.and()
 			.cors().and().csrf().disable()
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-			//.and()
-			//.addFilterBefore(new TokenAuthenticateFilterMiddleware(authToken, userRepository), UsernamePasswordAuthenticationFilter.class);
 	}
 	 
 		@Bean
