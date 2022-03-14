@@ -20,6 +20,6 @@
 - [ ] Criar logo.
 - [ ] Página home. 
 - [ ] Página sobre.
-- [ ] Páagina de cadastro.
+- [ ] Página de cadastro.
 - [ ] Criar rodapé.
 - [ ] Página de contato (fale conosco).
