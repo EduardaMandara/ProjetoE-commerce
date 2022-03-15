@@ -10,9 +10,9 @@ import org.springframework.security.core.GrantedAuthority;
 @Entity
 @Table
 public class Perfil implements GrantedAuthority {
-	/**
-	 * 
-	 */
+	
+	
+	
 	private static final long serialVersionUID = 1L;
 
 	private Long id;

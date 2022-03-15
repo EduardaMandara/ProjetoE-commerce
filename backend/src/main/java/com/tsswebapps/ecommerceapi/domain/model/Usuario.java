@@ -14,9 +14,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Entity
 @Table
 public class Usuario implements UserDetails {
-	/**
-	 * 
-	 */
+	
+	
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
