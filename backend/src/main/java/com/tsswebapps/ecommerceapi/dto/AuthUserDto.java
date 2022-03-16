@@ -1,16 +1,8 @@
 package com.tsswebapps.ecommerceapi.dto;
 
-public class UserDto {
-
-	private String nome;
+public class AuthUserDto {
 	private String email;
 	private String password;
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 	public String getEmail() {
 		return email;
 	}
@@ -25,7 +17,7 @@ public class UserDto {
 	}
 	@Override
 	public String toString() {
-		return "UserDto [nome=" + nome + ", email=" + email + ", password=" + password + "]";
+		return "AuthUserDto [email=" + email + ", password=" + password + "]";
 	}
 	
 	
