@@ -2123,6 +2123,9 @@ span.email-notes {
   margin: 10rem auto;
 }
 
+.form-group, .form-button {
+  padding: 1rem 0 0 0;
+}
 
 /*--------------------------------------------------------------
 # Responsive
