@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import com.tsswebapps.ecommerceapi.domain.model.Usuario;
 import com.tsswebapps.ecommerceapi.domain.repository.UsuarioRepository;
 import com.tsswebapps.ecommerceapi.dto.AuthUserDto;
+import com.tsswebapps.ecommerceapi.dto.UserDto;
 
 @Service
 public class UserService {
@@ -20,5 +21,8 @@ public class UserService {
 		return usuarioEncontrado.isPresent();
 	}
 	
-	public U
+	public UserDto save(UserDto userDto) {
+		repository.save(userDto.toUsuario());
+		return userDto;
+	}
 }
