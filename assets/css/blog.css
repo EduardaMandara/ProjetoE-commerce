@@ -1,0 +1,112 @@
+
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+.blog-area {
+    height: auto;
+    width: 100%;
+  }
+  
+  .blog-text h4 a {
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .blog-text h4 {
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .blog-btn {
+    border-bottom: 1px dotted #444;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .blog-btn {
+    border-bottom: 1px dotted #444;
+    color: #444;
+    display: inline-block;
+    padding: 0 1px 5px 0;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .blog-btn {
+    position: relative;
+  }
+  
+  .blog-btn::after {
+    content: "\f178";
+    font-family: fontawesome;
+    position: absolute;
+    right: -20px;
+    top: 1px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .blog-btn:hover::after {
+    right: -30px;
+  }
+  
+  .blog-btn:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .blog_meta span.date_type i {
+    margin-left: 5px;
+  }
+  
+  .blog-meta span.comments-type {
+    margin-left: 5px;
+  }
+  
+  .blog-meta span i {
+    padding-right: 10px;
+  }
+  
+  .blog-content .blog-meta {
+    border-bottom: 1px dotted #333;
+  }
+  
+  .blog-meta {
+    border-bottom: 1px dotted #fff;
+    padding: 10px 0;
+  }
+  
+  .comments-type > a, .date-type, .blog-meta span.comments-type {
+    color: #333;
+    letter-spacing: 1px;
+    margin-right: 5px;
+  }
+  
+  .blog-meta .comments-type i {
+    padding-right: 0 !important;
+  }
+  
+  .blog-content-right .comments-type > a, .blog-content-right .date-type, .blog-content-right .blog-meta span.comments-type, .blog-content-right .blog-text p {
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .single-blog .ready-btn {
+    border: 1px solid #444;
+    border-radius: 30px;
+    color: #444;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .single-blog .ready-btn:hover {
+    border: 1px solid #3EC1D5;
+    color: #fff;
+  }
+  

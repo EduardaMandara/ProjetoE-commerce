@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team-member {
+    background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
+    display: block;
+    margin-right: -15px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team-member::before {
+    background: rgba(0, 0, 0, 0) url("../img/team/team01.jpg") repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    margin-right: -15px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: 5s;
+    transform: scale(1);
+  }
+  
+  .team-member:hover.team-member::before {
+    transform: scale(1.2);
+  }
+  
+  .single-team-member {
+    border: 1px solid #ddd;
+  }
+  
+  .team-left-text h4 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .team-left-text p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  
+  .email-news {
+    display: block;
+    margin: 30px 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .email-news .email_button input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    padding: 8px;
+    width: 81%;
+  }
+  
+  .email-news .email_button > button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  
+  .email-news .email_button > button:hover {
+    background: #3EC1D5;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .team-left-icon ul li {
+    display: inline-block;
+  }
+  
+  .team-left-icon ul li a:hover {
+    color: #3EC1D5;
+    background: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .team-left-icon ul li a {
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 37px;
+    margin: 0 3px;
+    width: 40px;
+  }
+  
+  .team-member-carousel .single-team-member {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .single-team-member:hover .team-img a:after {
+    opacity: 1;
+  }
+  
+  .single-team-member:hover .team-social-icon {
+    top: 45%;
+    opacity: 1;
+  }
+  
+  .team-img {
+    position: relative;
+  }
+  
+  .team-img > a {
+    display: block;
+  }
+  
+  .team-img > a::after {
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    opacity: 0;
+  }
+  
+  .team-social-icon {
+    left: 50%;
+    margin-left: -61px;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    transition: 1.3s;
+  }
+  
+  .team-social-icon ul li {
+    display: inline-block;
+  }
+  
+  .team-social-icon ul li a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 34px;
+    width: 34px;
+    margin: 0 3px;
+  }
+  .team-social-icon ul li a i {
+    line-height: 0;
+  }
+  
+  .team-social-icon ul li a:hover {
+    color: #fff;
+    border: 1px solid #3EC1D5;
+    background: #3EC1D5;
+  }
+  
+  .team-content {
+    padding: 10px 0px;
+  }
+  
+  .team-content > h4, .team-content > p {
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  .team-content.head-team p {
+    margin-bottom: 0;
+  }
+  
+  .team-left-icon.text-center {
+    margin-bottom: 20px;
+  }
+  
+  .head-team h4 {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  
