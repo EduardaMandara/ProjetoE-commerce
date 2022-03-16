@@ -1,7 +1,6 @@
 package com.tsswebapps.ecommerceapi.domain.model;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
@@ -15,23 +14,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
 @Entity
 @Table
-public class Usuario implements UserDetails {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-	
-=======
-
->>>>>>> ff2f057cdf5dfb6e3f01fb34a95732a23d838084
-=======
-
->>>>>>> ff2f057cdf5dfb6e3f01fb34a95732a23d838084
-	private static final long serialVersionUID = 1L;
+public class Usuario{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -113,41 +98,4 @@ public class Usuario implements UserDetails {
 				+ "]";
 	}
 
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return this.perfis;
-	}
-
-	@Override
-	public String getPassword() {
-		return this.senha;
-	}
-
-	@Override
-	public String getUsername() {
-		return this.email;
-	}
-
-	@Override
-	public boolean isAccountNonExpired() {
-		return true;
-	}
-
-	@Override
-	public boolean isAccountNonLocked() {
-		return true;
-	}
-
-	@Override
-	public boolean isCredentialsNonExpired() {
-		return true;
-	}
-
-	@Override
-	public boolean isEnabled() {
-		return true;
-	}
-	
-	
-	
 }

@@ -8,24 +8,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.security.core.GrantedAuthority;
-
 @Entity
 @Table
-public class Perfil implements GrantedAuthority {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-	
-	
-=======
-
->>>>>>> ff2f057cdf5dfb6e3f01fb34a95732a23d838084
-=======
-
->>>>>>> ff2f057cdf5dfb6e3f01fb34a95732a23d838084
-	private static final long serialVersionUID = 1L;
-
+public class Perfil{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -69,12 +54,5 @@ public class Perfil implements GrantedAuthority {
 	public String toString() {
 		return "Perfil [id=" + id + ", descricao=" + descricao + "]";
 	}
-
-	@Override
-	public String getAuthority() {
-		
-		return this.descricao;
-	}
-	
 	
 }
