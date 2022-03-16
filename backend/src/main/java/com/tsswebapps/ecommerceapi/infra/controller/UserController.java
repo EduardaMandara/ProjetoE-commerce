@@ -23,7 +23,12 @@ public class UserController {
 				: new ResponseEntity<String>("INVALIDO", HttpStatus.UNAUTHORIZED);
 	}
 
-	public ResponseEntity<String> saveUser(@RequestBody UserDto userDto) {
-		return null;
+	public ResponseEntity<UserDto> saveUser(@RequestBody UserDto userDto) {
+		try {
+			UserDto saved = userService.save(userDto);
+			return new ResponseEntity<UserDto>(saved, HttpStatus.CREATED);			
+		} catch (Exception e) {
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		}
 	}
 }
