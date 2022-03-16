@@ -1,7 +1,9 @@
 package com.tsswebapps.ecommerceapi.infra.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +16,10 @@ import com.tsswebapps.ecommerceapi.infra.service.UserService;
 @RequestMapping("/user")
 public class UserController {
 
+	@Autowired
 	private UserService userService;
 
+	@PostMapping("/auth")
 	public ResponseEntity<String> auth(@RequestBody AuthUserDto userAuth) {
 		boolean auth = userService.userAuth(userAuth);
 
@@ -23,6 +27,7 @@ public class UserController {
 				: new ResponseEntity<String>("INVALIDO", HttpStatus.UNAUTHORIZED);
 	}
 
+	@PostMapping
 	public ResponseEntity<UserDto> saveUser(@RequestBody UserDto userDto) {
 		try {
 			UserDto saved = userService.save(userDto);
