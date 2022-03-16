@@ -13,9 +13,4 @@ public class HelloController {
 		System.out.println("teste");
 		return "Hello! Você está consumindo a API.";
 	}
-	
-	@GetMapping("/auth")
-	public String sayHelloAuth() {
-		return "Hello! Você está consumindo a API.";
-	}
 }

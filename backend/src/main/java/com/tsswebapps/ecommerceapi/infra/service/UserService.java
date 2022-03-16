@@ -27,4 +27,8 @@ public class UserService {
 		repository.save(userDto.toUsuario());
 		return userDto;
 	}
+	
+	public Optional<Usuario> finByEmail(String email){
+		return repository.findByEmail(email);
+	}
 }
