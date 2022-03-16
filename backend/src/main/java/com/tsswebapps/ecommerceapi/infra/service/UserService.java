@@ -2,6 +2,7 @@ package com.tsswebapps.ecommerceapi.infra.service;
 
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tsswebapps.ecommerceapi.domain.model.Usuario;
@@ -12,6 +13,7 @@ import com.tsswebapps.ecommerceapi.dto.UserDto;
 @Service
 public class UserService {
 
+	@Autowired
 	private UsuarioRepository repository;
 
 	public boolean userAuth(AuthUserDto userAuth) {

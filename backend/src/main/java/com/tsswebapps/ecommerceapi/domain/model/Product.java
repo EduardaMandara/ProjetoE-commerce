@@ -12,6 +12,8 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.NumberFormat;
 
+import com.tsswebapps.ecommerceapi.dto.ProductDto;
+
 @Entity
 @Table
 public class Product {
@@ -83,6 +85,22 @@ public class Product {
 	public String toString() {
 		return "Product [id=" + id + ", referencia=" + referencia + ", nomeprod=" + nomeprod + ", valorprod="
 				+ valorprod + "]";
+	}
+	
+	public ProductDto toProductDto() {
+		ProductDto productDto = new ProductDto();
+		productDto.setId(this.id);
+		productDto.setNomeprod(this.nomeprod);
+		productDto.setReferencia(this.referencia);
+		productDto.setValorprod(this.valorprod);
+		
+		return productDto;
+	}
+	
+	public void copyProductDto(ProductDto dto) {
+		this.nomeprod = dto.getNomeprod();
+		this.referencia = dto.getReferencia();
+		this.valorprod = dto.getValorprod();
 	}
 
 
