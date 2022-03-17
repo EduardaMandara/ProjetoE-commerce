@@ -32,8 +32,8 @@ public class ProductService {
 	}
 	
 	public ProductDto save(ProductDto product) {
-		repository.save(product.toProduct());
-		return product;
+		Product save = repository.save(product.toProduct());
+		return save.toProductDto();
 	}
 	
 	public void deleteproduct(Product product) {

@@ -33,6 +33,13 @@ public class ProductController {
 	
 	@GetMapping
 	public ResponseEntity<ProductDto> findByRef(@RequestParam(name = "ref") String ref) {
+		if(ref.equals(null)) {
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		}
+		
+		System.out.println(ref);
+		
+		
 		ProductDto byReferencia = productService.findByReferencia(ref);
 		
 		return new ResponseEntity<ProductDto>(byReferencia, HttpStatus.OK);
@@ -66,7 +73,7 @@ public class ProductController {
 			productOld.copyProductDto(productDto);
 			
 			ProductDto saved = productService.save(productOld.toProductDto());
-			return new ResponseEntity<ProductDto>(saved, HttpStatus.CREATED);			
+			return new ResponseEntity<ProductDto>(saved, HttpStatus.OK);			
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
