@@ -1,0 +1,108 @@
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #3ec1d5;
+    width: 40px;
+    height: 40px;
+    transition: all 0.4s;
+  }
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: #60ccdc;
+    color: #fff;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  input, select, textarea, input[type=text], input[type=date], input[type=url], input[type=email], input[type=password], input[type=tel], button, button[type=submit] {
+    -moz-appearance: none;
+    box-shadow: none !important;
+  }
+  
+  div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url("../img/preloader.gif") no-repeat center center;
+  }
+  
+  ::-moz-selection {
+    background: #3EC1D5;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #3EC1D5;
+    text-shadow: none;
+  }
+  
+  .area-padding {
+    padding: 70px 0px 80px;
+  }
+  
+  .area-padding-2 {
+    padding: 70px 0px 50px;
+  }
+  
+  .padding-2 {
+    padding-bottom: 90px;
+  }
+  
+  .section-headline h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-transform: capitalize;
+  }
+  
+  .section-headline h2::after {
+    border: 1px solid #333;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%;
+  }
+  
+  .sec-head {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+  }
+  
+  

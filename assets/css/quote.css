@@ -1,0 +1,23 @@
+
+/*--------------------------------------------------------------
+# Quote
+--------------------------------------------------------------*/
+.suscribe-area {
+    background: #3EC1D5 none repeat scroll 0 0;
+    padding: 30px 0;
+  }
+  
+  .suscribe-text {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .suscribe-text h3 {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }

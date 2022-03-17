@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #header.header-scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    height: 64px;
+  }
+  #header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: bold;
+  }
+  #header .logo h1 span {
+    color: #3ec1d5;
+  }
+  #header .logo h1 a, #header .logo h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  @media (max-width: 768px) {
+    #header {
+      height: 64px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+      font-size: 28px;
+    }
+  }
+  
+  .header-bg {
+    background: url(../img/background/page-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 60px;
+  }
+  .header-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  @media (min-width: 1025px) {
+    .header-bg {
+      background-attachment: fixed;
+    }
+  }
+  
