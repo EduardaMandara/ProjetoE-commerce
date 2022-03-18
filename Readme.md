@@ -10,3 +10,11 @@ https://user-images.githubusercontent.com/71239376/159068940-3b76dead-0e24-44f1-
 - PHP;
 - Java
 
+## Front End Developers:
+- Anna Moura Sobral: github.com/annamourasobral
+- Eduarda Mandara: github.com/eduardamandara
+
+## Back end Developers:
+- Hans Sergio Mafra: github.com/hanssergiome
+- Thiago Santanna: github.com/thiago-santanna
+
