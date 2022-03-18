@@ -1,9 +1,21 @@
-/**
-* Template Name: eBusiness - v4.7.0
-* Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+let inptNome = document.querySelector('#inputName')
+let inptEmail = document.querySelector('#inputEmail')
+let inptSenha = document.querySelector('#inputPassword')
+
+const salvarUsuario = () => {
+  axios.post('http://localhost:8080/users/', {
+      nome: inptNome.value,
+      email: inptEmail.value,
+      password: inptSenha.value,
+  })
+      .then((response) => {
+          console.log(response.data)
+      })
+      .catch((error) => {
+          console.log(error)
+      })
+}
+
 (function() {
   "use strict";
 
