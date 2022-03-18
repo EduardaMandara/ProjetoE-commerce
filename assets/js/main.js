@@ -2,6 +2,7 @@ let inptNome = document.querySelector('#inputName')
 let inptEmail = document.querySelector('#inputEmail')
 let inptSenha = document.querySelector('#inputPassword')
 
+// Dados de cadastro de Usuário
 const salvarUsuario = () => {
   axios.post('https://poc-ecommerce-t12.herokuapp.com/users/', {
       nome: inptNome.value,
@@ -11,7 +12,7 @@ const salvarUsuario = () => {
       .then((response) => {
           console.log(response.data)
           console.log(response.status)
-          if(response.status){
+          if(response.status === 200){
             alert("Usuário cadastrado com sucesso!")
           }
       })
@@ -19,7 +20,27 @@ const salvarUsuario = () => {
           console.log(error)
       })
 }
+// End Dados de cadastro de Usuário
 
+// Dados de Login
+
+const loginUsuario = () => {
+  axios.post('https://poc-ecommerce-t12.herokuapp.com/users/auth', {
+      email: inptEmail.value,
+      password: inptSenha.value,
+  })
+      .then((response) => {
+          console.log(response.data)
+          console.log(response.status)
+          if(response.status === 200){
+            alert("Login efetuado com sucesso!")
+          }
+      })
+      .catch((error) => {
+          console.log(error)
+      })
+}
+// End Dados de Login
 
 (function() {
   "use strict";

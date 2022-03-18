@@ -99,16 +99,16 @@
 
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example17">E-mail</label>
-                      <input type="email" id="form2Example17" placeholder="Insira o E-mail cadastrado" class="form-control form-control-lg" />
+                      <input type="email" id="inputEmail" placeholder="Insira o E-mail cadastrado" class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example27">Senha</label>
-                      <input type="password" id="form2Example27" placeholder="Insira sua senha cadastrada" class="form-control form-control-lg" />
+                      <input type="password" id="inputPassword" placeholder="Insira sua senha cadastrada" class="form-control form-control-lg" />
                     </div>
 
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                      <button onclick="loginUsuario()" class="btn btn-dark btn-lg btn-block" type="button">Login</button>
                     </div>
 
                     <div>
@@ -223,6 +223,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
